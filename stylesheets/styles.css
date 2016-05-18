@@ -1,0 +1,215 @@
+/********************************
+MAIN STYLES
+********************************/
+
+* {
+	box-sizing: border-box;
+}
+
+
+img {
+	max-width: 100%;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	display: inline-block;
+	margin: 55px 0 30px 0; 
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+  color: #dc143c;
+} 
+
+ul {
+	list-style: none;
+	margin-left: -2.2em;
+}
+
+h4 {
+	display: inline;
+}
+
+body {
+	line-height: 25px;
+}
+
+
+/********************************
+HEADING
+********************************/
+
+.profile {
+	width: 75%;
+	max-width: 350px;
+}
+
+.site-tag {
+	margin-top: 40px;
+}
+
+/********************************
+NAVIGATION
+********************************/
+
+.main-nav {
+	list-style: none;
+	margin-bottom: 40px; 
+}
+
+ .main-nav li {
+ 	display: block;
+ 	background-color: #f0f0f0;
+}
+
+ .main-nav li h3 {
+ 	list-style: none;
+ 	padding: 8px 0;
+}
+
+
+
+/********************************
+SECTIONS
+********************************/
+
+.about {
+	margin-bottom: 20px;
+}
+
+.card {
+	margin: 60px 0;
+	background-color: #f0f0f0;
+	color: #333;
+	border-radius: 10px;
+	padding: 0 10px 20px 10px;
+	box-shadow: 0 4px 2px -3px;
+}
+
+
+
+/********************************
+FOOTER
+********************************/
+
+.main-footer {
+	border-top: .5px solid black;
+	color: #333;
+	padding: 20px 0 50px 0;
+}
+
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
+}
+
+/********************************
+LAYOUT
+********************************/
+
+.footer-expand {
+	display: none;
+}
+
+.col {
+	padding: 40px;
+	float: left;
+}
+
+
+/********************************
+MEDIA QUERIES
+********************************/
+
+@media (min-width: 768px) {
+
+	.main-nav li {
+		display: inline-block;
+		margin-right: 1em;
+		margin-top: -15px;
+		background-color: inherit;
+	}
+
+	.site-tag {
+		margin-top: 50px;
+	}
+
+
+	.remove {
+		display: none;
+	}
+
+	.footer-expand {
+	display: inline-block;
+	margin-left: 15px;
+	}
+
+	.aboutcol {
+		display: inline-block;
+		width: 50%;
+		margin-right: -4px;
+		vertical-align: top;
+	}
+
+	#herotext {
+		text-align: left;
+	}
+
+	.col {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-nav {
+		display: block;
+	}
+
+	.nav-links {
+		text-align: right;
+		margin-top: -55px;
+	}
+
+	.site-tag {
+		text-align: left;
+	}
+
+	.col {
+		width: 33.3333%;
+	}
+
+	.hide-when-large {
+		display: none;
+	}
+
+}
+
+
+/********************************
+Float Clearfix
+********************************/
+
+.clearfix::after {
+ 		content: " ";
+  	    display: table;
+ 		clear: both;
+}
+
+
